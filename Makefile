@@ -15,3 +15,5 @@ unittest:
 swagger_documentation:
 	swag init -g main.go --output swagger
 
+docker:
+	docker build --pull --rm -f "Dockerfile" -t clean-architecture-beego "." --build-arg BRANCH=$(BRANCH)

@@ -1,0 +1,12 @@
+version: "2.3"
+services:
+  web:
+    image: clean-architecture-beego
+    container_name: clean-architecture-beego
+    ports:
+      - 8260:8260
+    networks: 
+      - backend
+networks:
+  backend:
+    driver: "bridge"
